@@ -1,0 +1,24 @@
+<h1>Add A New Card</h1>
+<br>
+
+<%= form_for @card do |f| %>
+
+  <%= f.label "Enter Credit Card Number:" %>
+  <%= f.text_field :cardnum %>
+  <br>
+  <br>
+
+  <%= f.label "Card Security Number:" %>
+  <%= f.text_field :cardsecuritynum %>  
+  <br>
+  <br>
+
+  <%= f.label "Expiration Date:" %>
+  <%= f.text_field :cardexp %>
+  <br>
+  <br>
+
+  
+  <%= f.submit "Submit"  %>
+
+<% end %>
